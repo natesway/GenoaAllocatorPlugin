@@ -119,23 +119,11 @@ public class GenoaAllocatorPlugin implements PluginContainer {
 
     private String getOutboundIp() {
         try {
-            URL url = new URL("http://icanhazip.com");
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setDoOutput(true);
+            String ip = Files.lines(Paths.get(GenoaAllocatorPlugin.get().getDataDirectory() + "/ip.txt")).collect(Collectors.joining());
 
-            StringBuilder response;
-            try (BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()))) {
-                response = new StringBuilder();
+            this.logger.info("USING IP: " + ip);
 
-                String inputLine;
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-            }
-
-            this.logger.info("OUTBOUND IP: " + response.toString());
-
-            return response.toString();
+            return ip;
         } catch (Exception e) {
             this.logger.error("Error whilst getting outbound ip!");
             e.printStackTrace();
