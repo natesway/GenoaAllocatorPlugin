@@ -1,5 +1,5 @@
 # GenoaAllocatorPlugin
-[![CI](https://github.com/Project-Earth-Reborn/GenoaAllocatorPlugin/actions/workflows/CI.yml/badge.svg)](https://github.com/Project-Earth-Reborn/GenoaAllocatorPlugin/actions/workflows/CI.yml)  
+[![CI](https://github.com/jackcaver/GenoaAllocatorPlugin/actions/workflows/CI.yml/badge.svg)](https://github.com/jackcaver/GenoaAllocatorPlugin/actions/workflows/CI.yml)  
 
 An level allocator for use in conjunction with the normal GenoaPlugin and the Cloudburst fork.
 
