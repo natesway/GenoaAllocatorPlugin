@@ -26,8 +26,8 @@ jobs:
     - name: Get and Build Allocator Plugin
       run: |
           cd .github/workflows/
-          git clone --recursive https://github.com/Project-Earth-Reborn/GenoaAllocatorPlugin.git
-          cd GenoaAllocatorPlugin
+          git clone --recursive https://github.com/Project-Earth-Reborn/GenoaPlugin.git
+          cd GenoaPlugin
           mvn clean install --file ./pom.xml
           cd ..
             
