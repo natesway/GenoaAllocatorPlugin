@@ -2,7 +2,7 @@
 [![CI](https://github.com/jackcaver/GenoaAllocatorPlugin/actions/workflows/CI.yml/badge.svg)](https://github.com/jackcaver/GenoaAllocatorPlugin/actions/workflows/CI.yml)  
 
 An level allocator for use in conjunction with the normal GenoaPlugin and the Cloudburst fork.
-
+\
 # DISCLAIMER
 **Depending on how and where this plugin is utilized, it has the potential to constitute a violation of Mojang EULAs. Be cautious!**
   
